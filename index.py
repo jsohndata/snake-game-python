@@ -5,11 +5,12 @@ import random
 WIDTH = 800
 HEIGHT = 600
 DELAY =  100 # Miliseconds between screen updates.
-GAME_NAME = "🐍 Snake Game"
-GAME_BGCOLOR = "black"
-SNAKE_COLOR = "pink"
-FOOD_SHAPE = "circle"
-FOOD_COLOR = "green"
+GAME_NAME = "🐍 🕹️ Snake Game"
+GAME_BGCOLOR = "#131313"
+SNAKE_SHAPE = "circle"
+SNAKE_COLOR = "#9820C5"
+FOOD_SHAPE = "triangle"
+FOOD_COLOR = "#F0C32E"
 FOOD_SIZE = 20
 
 offsets = {
@@ -125,7 +126,7 @@ screen.onkey(go_left, "Left")
 
 # Create a turtle to do your bidding
 stamper = turtle.Turtle()
-stamper.shape("square")
+stamper.shape(SNAKE_SHAPE)
 stamper.color(SNAKE_COLOR)
 stamper.penup()
 
